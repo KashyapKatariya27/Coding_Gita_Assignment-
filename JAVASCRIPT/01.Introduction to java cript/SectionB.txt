@@ -1,0 +1,27 @@
+Section B: True or False
+...........................................................
+
+(Q1) Javascript is a statically typed languge.
+--> False -> JavaScript is a dynamically typed languge.
+
+(Q2) javaScript can only run inside the browser.
+--> False -> JavaScript can run outside the browser too (e.g., using Node.js)
+
+(Q3) HTMl is responseible for the behaviour of a webpage.
+--> False -> CSS(not HTML) is responsible for the behaviour... actually correction:
+    HTMl is responsible for structure,not behavior.Behaviour is handled by JavaScript.
+
+(Q4) Node.Js allows javaScript to run outside the browser .
+--> True
+
+(Q5) JavaScript is case-insensitive.
+--> False -> JavaScript is case-sensitive.
+
+(Q6) let name and let Name are the same variable.
+--> False -> let name and let Name are different variable(case-sensitive).
+
+(Q7) ECMAScript is a programming languge.
+--> False -> ECMAScript is a specification/standerd,not a programming languge itself.
+
+(Q8) React,Angular, and Vue.js are used for Backend development.
+--> False -> React,Angular,and Vue.js are used for Frontend development.
