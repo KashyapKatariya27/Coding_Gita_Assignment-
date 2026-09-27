@@ -1,0 +1,41 @@
+(Q14) Differentiate between a static website and dynamic website. Give one real-world example of each.
+->  A static website shows the same fixed content to every visitor and doesn't interact with a database - e.g.,a simple 
+    portfolio page with hardcoded HTML. A dynamic website generates or changes content based on user input,time, or database
+    queries- e.g., Instagram,where your feed is Different from everyone else's and updates constantly.
+
+(Q15) Explain any two features of JavaScript that makes it suitable for craating interactive web pages.
+->  1. Event handling - JS can delect user actions like clicks,key press,or mouse movement and respond instantly(e.g.,
+    showing a menu on click).
+
+    2. DOM manipulation - JS can dyanamically change HTML content,styles,and structure without reloading the page(e.g.,
+    updating a cart count when you add an item).
+
+(Q16) List any four areas (apart from web browsers) where JavaScript is used today. Mention one popular framework/library
+      for each (if applicable)
+->  1.Backend developmement -> Node.Js.
+    2.Mobile app developmement -> React Native
+    3.Desktop app developmement -> Electron.Js
+    4.AI/Machine Learning -> TensorFlow.Js
+
+(Q17) What is the Difference between writing JavaScript code:
+   . Inside an HTML file using <script>tag,and
+   ->Inline (<script>in HTML):JS code is written directly inside the HTMl file.
+   . in an external .js file?
+     Mention two advantage of using an external JavaScript file.
+   ->External .js file:JS code is written in a separate file and linked using <script src="file.js"></script>.
+   Two adavantage of external files:
+   1. Reusability - the same JS file can be linked to multiple HTMl pages.
+   2. Better maintaiability-keeps HTML(structure) and JS(logic)separate,making code cleaner and easier to debug/update.
+
+(Q18) Explain the Difference between Frontend and Backend using the resturent analogy in your own words.
+->  In a resturent analogy:YOU(the Customer) are the Frontend-you see the menu and place an order,similar to how a user
+    interacts with a website's interface. The waiter is like the Backend server - they take your request,pass it to the
+    kitchen,and bring the response back,similar to an API relaying request between the browser and the database.The chef 
+    is like the database-they actually prepare/store the "data"(food) that gets delivered back to you.
+
+(Q19) Why should a beginner learn JavaScript? Write at least 4 points.
+->  1. It's the only language browsers understand Natively,making it essential for web developmement.
+    2. It has huge demand in the job market for Frontend,Backend,and full-stack roles.
+    3. It has a massive ecosystem - frameworks like React,Angular,Vue,and Node.js are all JS-based.
+    4. It's beginner-friebdly - easy to start with,since you just need a browser ,no complex setup required.
+                                       
