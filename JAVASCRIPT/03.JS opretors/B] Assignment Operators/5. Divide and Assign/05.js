@@ -1,0 +1,1 @@
+// Answer: the result is Infinity , because any number divide by 0 is infinity.

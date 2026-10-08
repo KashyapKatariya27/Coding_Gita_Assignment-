@@ -1,0 +1,1 @@
+// Result: 25 => Same result for both

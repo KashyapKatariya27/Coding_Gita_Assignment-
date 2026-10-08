@@ -1,0 +1,1 @@
+// Answer: Output is NaN (not a number) , because x assigns abc which is character and numbers should not subtract from character . if a string contains numbers then js convert its type into number , but if string contains character then it does not convert in this situation.

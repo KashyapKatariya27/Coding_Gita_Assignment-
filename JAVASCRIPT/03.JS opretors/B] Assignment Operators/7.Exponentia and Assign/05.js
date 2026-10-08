@@ -1,0 +1,1 @@
+//  Answer: the result is 0.5 .

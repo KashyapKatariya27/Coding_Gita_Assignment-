@@ -1,0 +1,1 @@
+// Answer: the output is NaN (not a number).
