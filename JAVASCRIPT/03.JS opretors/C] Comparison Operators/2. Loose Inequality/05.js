@@ -1,0 +1,1 @@
+// Explanation: NaN is not equal to itself. Therefore, the inequality operator != returns true.

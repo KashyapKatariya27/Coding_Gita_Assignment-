@@ -1,0 +1,1 @@
+// Explanation: NaN means Not-a-Number. In JavaScript, NaN is not equal to anything, including itself.
