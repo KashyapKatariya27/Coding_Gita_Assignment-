@@ -51,4 +51,6 @@ Two advantages of an external file:
 2. It has **huge demand** in the job market for frontend, backend, and full-stack roles.
 3. It has a **massive ecosystem**: React, Angular, Vue, and Node.js are all JS-based.
 4. It is **beginner-friendly**: you only need a browser to start, with no complex setup.
+
+
                                        

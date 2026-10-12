@@ -11,3 +11,4 @@ console.log(y);  // ReferenceError: y is not defined
 console.log(z);  // never runs, because the error above stops the program
 
 
+
