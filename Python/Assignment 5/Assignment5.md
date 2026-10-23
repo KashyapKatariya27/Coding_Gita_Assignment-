@@ -1,8 +1,5 @@
 # Assignment 5 — Single `for` Loop: Solutions
 
-**Rule followed everywhere:** exactly one `for` loop, no nested loops, no `while` / `break` / `continue`, no lists or functions.
-
-> **Trick used in digit problems (no `while` allowed):** a number `n` can never have more than `n` digits, so `for _ in range(n)` is always enough iterations. Inside the loop, `if temp > 0:` makes sure we only process real digits. Each iteration takes `temp % 10` (last digit) and then does `temp //= 10` (drops it).
 
 ---
 
@@ -150,7 +147,6 @@ print(total)
 `10` → `37` ✔
 `15` → **`75`**
 
-> ⚠️ **Note:** The assignment lists `80` for input `15`, but that appears to be a typo. Sum of 1..15 is 120, multiples of 3 add up to 45 (3+6+9+12+15), and 120 − 45 = **75**. The code is correct.
 
 ## Q12. Count Even and Odd Together
 ```python
@@ -1101,8 +1097,3 @@ Even Index Characters: 6
 
 ---
 
-# Quick Notes
-
-- **Q11:** the printed expected value `80` for input `15` looks like a typo in the assignment; the correct answer is `75`.
-- **Q45:** the example `Python` has an even length, but `len(s) // 2` still gives the expected `h`.
-- For inputs given on one line in the question (e.g. expenses `250 180 400 120 300`), the programs read them one per `input()` call, as the questions say "enter … one by one". Press Enter after each value.
