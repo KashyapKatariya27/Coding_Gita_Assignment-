@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* puzzle on the left, answer on the right */
+.page {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  padding-top: 70px;
+}
+
+.board h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.grid {
+  border-collapse: collapse;
+}
+
+/* thick lines around every 3x3 box */
+.grid colgroup,
+.grid tbody {
+  border: 2px solid #000000;
+}
+
+.grid td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 22px;
+}
+
+.green {
+  background-color: #b2d8bf;
+}
+
+@media (max-width: 660px) {
+  .page {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+  }
+}

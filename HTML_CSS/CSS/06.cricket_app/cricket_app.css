@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-size: 17px;
+  background: #ffffff url("assets/background.png") no-repeat right bottom;
+}
+
+/* ---------- Header ---------- */
+.header {
+  position: relative;
+  padding: 80px 0 0 57px;
+}
+
+.logo {
+  position: absolute;
+  top: 18px;
+  right: 72px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.45);
+}
+
+.header h2 {
+  margin: 8px 0 0 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #6b6b6b;
+}
+
+/* ---------- Scorecard ---------- */
+.scorecard {
+  width: 947px;
+  max-width: 100%;
+  margin: 23px 0 40px 56px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.innings {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 0 21px;
+  height: 43px;
+  line-height: 43px;
+  background-color: #f04e37;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td, th {
+  box-sizing: border-box;
+  height: 43px;
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* column widths */
+.name { width: 269px; }
+th:nth-child(2) { width: 330px; }
+th:nth-child(3) { width: 70px; }
+th:nth-child(4) { width: 75px; }
+th:nth-child(5) { width: 65px; }
+th:nth-child(6) { width: 55px; }
+
+.table-head th {
+  height: 45px;
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+th.name,
+td.name,
+td.label {
+  padding-left: 21px;
+  text-align: left;
+}
+
+.sr {
+  padding-right: 15px;
+  text-align: right;
+}
+
+.out {
+  text-align: left;
+  color: #777777;
+}
+
+.runs {
+  font-weight: 700;
+}
+
+.summary {
+  padding-left: 23px;
+  text-align: left;
+}
+
+.player-list {
+  text-align: left;
+}
+
+a {
+  color: #2a7bde;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding: 90px 15px 0 15px;
+  }
+  .header h1 {
+    font-size: 32px;
+  }
+  .scorecard {
+    margin: 25px 10px;
+    overflow-x: auto;
+    width: auto;
+  }
+  table {
+    min-width: 700px;
+  }
+}

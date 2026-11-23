@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #ffffff;
+  /* dark night sky on top, green ground at the bottom */
+  background: linear-gradient(to bottom, #1c2a42 0%, #1e3552 55%, #1f3d22 75%, #14290f 100%);
+}
+
+.header {
+  padding-top: 38px;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  margin: 0;
+  padding-left: 40px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 27px;
+  text-align: left;
+}
+
+/* two team boxes side by side */
+.teams {
+  display: flex;
+  justify-content: center;
+  gap: 93px;
+  margin-top: 80px;
+}
+
+.team {
+  width: 428px;
+  height: 342px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.team-ind { background-color: #1459b0; }
+.team-pak { background-color: #3a9a2e; }
+
+.team h1 {
+  margin: 44px 0 34px 0;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.balls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.balls span {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.score {
+  margin: 22px 0 0 0;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+/* bat and reset buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 57px;
+  margin-top: 72px;
+}
+
+.button {
+  width: 92px;
+  height: 92px;
+  border: 3px solid #ffffff;
+  border-radius: 18px;
+  font-size: 48px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.bat {
+  background-color: #f7b52c;
+  border-color: #f7c553;
+  box-shadow: 0 6px 0 #d58f1b;
+}
+
+.reset {
+  background-color: #e7262c;
+  box-shadow: 0 6px 0 #b9191e;
+}
+
+@media (max-width: 1000px) {
+  .teams {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .team {
+    width: 90%;
+    height: auto;
+    padding-bottom: 25px;
+  }
+  .team h1 {
+    font-size: 56px;
+    margin: 20px 0 15px 0;
+  }
+  .balls span {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+  }
+}

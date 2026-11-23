@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: "Rubik", Arial, sans-serif;
+  color: #000000;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 5%;
+}
+
+.logo {
+  width: 124px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cart img {
+  width: 28px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  height: 371px;
+  padding: 0 5%;
+  background-image: url("assets/kw-background.png");
+  background-size: cover;
+  background-position: center top;
+  color: #ffffff;
+}
+
+.hero h1 {
+  margin: 0;
+  padding-top: 52px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 75px;
+}
+
+.hashtag {
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ---------- Sections ---------- */
+.container {
+  padding: 0 5% 130px 5%;
+}
+
+.section {
+  padding-top: 144px;
+}
+
+.section h2 {
+  margin: 0 0 6px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+}
+
+.books-grid {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 48px;
+}
+
+.four-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+}
+
+/* ---------- Product card ---------- */
+.product-img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.book {
+  border-radius: 8px;
+}
+
+/* white-background pictures get a light border */
+.handmade {
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+
+.product-name {
+  margin: 4px 0 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.product-sub {
+  margin: 6px 0 0 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: #777777;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.price {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5b8ff9;
+  color: #ffffff;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-btn img {
+  width: 15px;
+}
+
+/* ---------- Tablet and mobile ---------- */
+@media (max-width: 1000px) {
+  .books-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .four-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .section {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 300px;
+  }
+  .hero h1 {
+    padding-top: 30px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .four-grid {
+    grid-template-columns: 1fr;
+  }
+}

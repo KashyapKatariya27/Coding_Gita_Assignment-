@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* 3 x 3 layout: 4 homes in the corners, 4 paths and the center */
+.board {
+  display: grid;
+  grid-template-columns: 270px 135px 270px;
+  grid-template-rows: 270px 135px 270px;
+  width: 675px;
+  margin: 0 auto;
+}
+
+/* ---------- Homes ---------- */
+.home {
+  box-sizing: border-box;
+  padding: 45px;
+}
+
+.red    { background-color: #e8321f; }
+.green  { background-color: #357e22; }
+.blue   { background-color: #061ef5; }
+.yellow { background-color: #ffff50; }
+
+.home-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  height: 180px;
+  background-color: #ffffff;
+}
+
+.coin {
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  border: 4px solid;
+  border-radius: 50%;
+}
+
+.red-border    { border-color: #e8321f; }
+.green-border  { border-color: #357e22; }
+.blue-border   { border-color: #061ef5; }
+.yellow-border { border-color: #ffff50; }
+
+/* ---------- Paths ---------- */
+.path {
+  display: grid;
+}
+
+.path-top,
+.path-bottom {
+  grid-template-columns: repeat(3, 45px);
+}
+
+.path-left,
+.path-right {
+  grid-template-columns: repeat(6, 45px);
+}
+
+.cell {
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 43px;
+  font-size: 32px;
+}
+
+/* colored cells need to win over the white background */
+.cell.red    { background-color: #e8321f; }
+.cell.green  { background-color: #357e22; }
+.cell.blue   { background-color: #061ef5; }
+.cell.yellow { background-color: #ffff50; }
+
+/* ---------- Center: 4 triangles made with borders ---------- */
+.triangles {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 67.5px;
+  border-color: #357e22 #ffff50 #061ef5 #e8321f;
+}
+
+@media (max-width: 700px) {
+  .board {
+    transform: scale(0.5);
+    transform-origin: top left;
+    margin: 0;
+  }
+}
